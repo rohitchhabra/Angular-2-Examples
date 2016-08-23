@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Golenchi</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<script src="js/angular.min.js"></script>
+<script src="js/common.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/angular.min.js"></script>
+        <script src="js/common.js"></script>
+</head>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog content-area1" role="document">
+    <button type="button" class="btn btn-default close-icon" data-dismiss="modal">Close</button>
+    <div class="modal-content modal-content1">
+      <div class="modal-header logo-modal"><img src="images/logo.png" alt=""/></div>
+      <div class="modal-body modal-content1">
+        <div class="active-content">
+          <p>We have send activation email to<br/>
+            <123 @ abc.com>.<br/>
+            please click on link in email to active account</p>
+        </div>
+        <div class="active-link">
+          <p>Trouble receving activation email?<br/>
+            <a href="#">Resend activation email</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<body ng-app="golenchy" ng-controller="menuCtrl">
+
+<div class="wraper">
+  <div id="header" ng-include="headerurl"></div>
+  <div class="container-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <div class="nav-sidebar-section" ng-include="sidebarUrl" ></div>
+        </div>
+        <div class="col-xs-12 col-sm-offset-3 col-sm-9 col-md-10 col-md-offset-2 col-padd">
+          <div class="heading">
+            <p>Manage Profile</p>
+          </div>
+          <div class="col-sm-9 col-md-5  main1">
+            <div class="form-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="form-group form-group1">
+                    <label for="url">URL</label>
+                    <input type="url" class="form-control form-txt1" id="urltxt" name="url" value="" placeholder="Your Url" >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 padd-txt4">
+                  <div class="form-group form-group1">
+                    <label for="firstname">First Name</label>
+                    <input type="firstname" class="form-control form-txt1" name="firstname" value="" id="nametxt" placeholder="First Name" >
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 padd-txt5">
+                  <div class="form-group form-group1">
+                    <label for="lastname">Last Name</label>
+                    <input type="lastname" class="form-control form-txt1" name="lastname" value="" id="lasttxt" placeholder="Last Name" >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="form-group form-group1">
+                    <label for="companyname">Company Name</label>
+                    <input type="companyname" class="form-control form-txt1" name="companyname" value="" id="companynametxt" placeholder="Company Name" >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="form-group form-group1">
+                    <label for="companyaddress">Company Address</label>
+                    <input type="companyaddress" class="form-control form-txt1" value="" name="companyaddress" id="companyaddress" placeholder="Company Address" >
+                    <input type="companyaddress" class="form-control  form-txt1 form-txt2" value="" name="companyaddress" id="companyaddresstxt" placeholder="Company Address1" >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 padd-txt4">
+                  <div class="form-group form-group1">
+                    <label for="city">City</label>
+                    <input type="city" class="form-control form-txt1" name="city" value="" id="citytxt" placeholder="City" >
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 padd-txt5">
+                  <div class="form-group form-group1">
+                    <label for="state">State</label>
+                    <input type="state" class="form-control form-txt1" name="state" value="" id="statetxt" placeholder="State" >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 padd-txt4">
+                  <div class="form-group form-group1">
+                    <label for="zipcode">Zip Code</label>
+                    <input type="zipcode" class="form-control form-txt1" name="zipcode" value="" id="ziptxt" placeholder="Zip Code" >
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 padd-txt5">
+                  <div class="form-group form-group1">
+                    <label for="country">Country</label>
+                    <input type="country" class="form-control form-txt1" name="country" value="" id="countrytxt" placeholder="Country" >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="form-group form-group1">
+                    <label for="emailaddress">Email Address</label>
+                    <input type="emailaddress" class="form-control form-txt1" name="emailaddress" value="" id="emailaddresstxt" placeholder="Email Address" >
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                  <div class="form-group form-group1">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control form-txt1" name="password" value="" id="password" placeholder="Password" >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subscription-section">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 padd-txt2">
+                  <button type="button" class="input-cancel-subscription" value="" id="cancel">Cancel</button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 padd-txt3">
+                  <button type="button" class="input-save-subscription" data-toggle="modal" data-target="#myModal">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-section" ng-include="footerUrl" id="footer"></footer>
+</div>
+</body>
+</html>

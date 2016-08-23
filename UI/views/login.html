@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Golenchi</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+	</head>
+	<body style="width:100%; display:table">
+			<div class="container" style="display:table-cell; vertical-align:middle">
+				
+					<div class="login-area-section">
+						<div class="login-area">
+							<div class="login-logo-section">
+							<img src="images/logo.png"/>
+						</div>
+							<form [ngFormModel]="loginForm">
+								<div class="col-md-12 col-sm-12 col-xs-12"> 
+									<div class="form-group form-group1">
+										<label for="emailaddress">Email address</label>
+										<input type="emailaddress"  [(ngModel)]="loginModel.email" class="form-control form-txt1" name="emailaddress" value="" id="emailtxt" placeholder="Email Address" 
+										[ngFormControl]="loginForm.controls['email']">
+									</div>
+										<div *ngIf="!loginForm.controls['email'].untouched ">
+											<span>required</span>
+										</div>
+								</div>
+								<div class="col-md-12 col-sm-12 col-xs-12"> 
+									<div class="form-group form-group1">
+										<label for="password">Password</label>
+										<input type="password"  [(ngModel)]="loginModel.password" class="form-control form-txt1" name="password" value="" id="passtxt" placeholder="Password" 
+										[ngFormControl]="loginForm.controls['password']">
+										<div *ngIf="!loginForm.controls['password'].untouched ">
+											<P *ngIf="!loginForm.controls['password'].valid ">required</P>
+										</div>
+											<div class="forget-password">
+											<p>Forget Password?</p>
+											</div>
+									</div>
+								</div>
+								
+								<div class="col-md-12 col-sm-12 col-xs-12 text-center"><button type="submit" class="submit-btn" value="" id="submittxt" (click)="login()">Login</button></div>
+								<p>{{loginRes}}</p>
+							</form>
+							
+						</div>
+				
+					</div>
+		
+			</div>
+	</body>
+</html>

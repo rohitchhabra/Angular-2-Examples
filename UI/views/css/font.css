@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'helveticaneue1';
+    src: url('../font/helveticaneue1.eot');
+    src: url('../font/helveticaneue1.eot') format('embedded-opentype'),
+         url('../font/helveticaneue1.woff2') format('woff2'),
+         url('font/helveticaneue1.woff') format('woff'),
+         url('font/helveticaneue1.ttf') format('truetype'),
+         url('font/helveticaneue1.svg#helveticaneue1') format('svg');
+}
+@font-face {
+    font-family: 'helveticaneuebold';
+    src: url('../font/helveticaneuebold.eot');
+    src: url('../font/helveticaneuebold.eot') format('embedded-opentype'),
+         url('../font/helveticaneuebold.woff2') format('woff2'),
+         url('../font/helveticaneuebold.woff') format('woff'),
+         url('../font/helveticaneuebold.ttf') format('truetype'),
+         url('../font/helveticaneuebold.svg#helveticaneuebold') format('svg');
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../font/Helvetica.eot');
+    src: url('../font/Helvetica.eot') format('embedded-opentype'),
+         url('../font/Helvetica.woff2') format('woff2'),
+         url('../font/Helvetica.woff') format('woff'),
+         url('../font/Helvetica.ttf') format('truetype'),
+         url('../font/Helvetica.svg#Helvetica') format('svg');
+}
